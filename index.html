@@ -11,35 +11,106 @@
   ga('send', 'pageview');
 
 </script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <head> <title> Habeeb Olufowobi Webpage </title> <link rel="stylesheet"
-type="text/css" href="index.css"> </head>
+type="text/css" href="index.css"> 
+<style>
+body {font-family: "Lato", sans-serif;}
 
-<body bgcolor="#E6E6FA"><div id = "container"> <div id = "header"> <h1>Habeeb Dipo Olufowobi, Ph.D.</h1> </div>
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  margin-right: 250px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+</style>
+
+
+</head>
+
+<body bgcolor="#e8e8ed"><div id = "container"> <div style= "margin-left: 250px" id = "header"> <h1>Habeeb Dipo Olufowobi, Ph.D.</h1> </div>
 
 <hr \>
 
-<div id = "menu" style = "menu"> <img id = "me" alt="photo" src =
-    "images/pic.jpg" height ="200"> </div>
+<div id="sidebar" class="sidebar">
+  <div id="profile" class="clearfix">
+      <div class="author__avatar">
+          <a>
+              <img src=" images/pic.jpg" alt="Habeeb Olufowobi" style="width:100%">
+          </a>
+      </div>
+ 
+      </div> 
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="research.html"><i class="fa fa-fw fa-book"></i> Research</a>
+    <a href="publications.html"><i class="fa fa-fw fa-edit"></i> Publications</a>
+    <a href="teaching.html"><i class="fa fa-fw fa-book"></i> Teaching</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="Habeeb.pdf"><i class="fas fa-cloud-download-alt"></i> CV</span></a>
+    <a href="https://scholar.google.com/citations?user=8sqvlk8AAAAJ&hl=en&oi=ao"><i class="fa fa-fw fa-graduation-cap"></i> Google Scholar</a>
+    <a href="https://www.researchgate.net/profile/Habeeb_Olufowobi"><i class="fab fa-researchgate" style='font-size:28px'></i> Research Gate</a>
 
-<div id = "content">
   
- <p align='justify'>I am an embedded systems security researcher currently working on in-vehicle systems security. 
-     Presently, I'm investigating security issues arising out of the growing use of the access points to 
-     vehicular distributed systems, that a potential hacker can exploit. I aim to develop a mechanism and an 
-     intrusion detection system that can detect attacks on the in-vehicle networks (CAN) and transition the system 
-     into a fail-operational state. My research interests include automotive cyber security, IoT security, data provenance, 
-     and data analytics.
+    </div>
+
+
+        
+</div>
+
+    </div>
+
+<div class="main">
+
+<h2><i class="fas fa-male"></i>  About me</h2>
+
+ <p class="address" align='justify'>I am an Assistant Professor in the Department of Computer Science and Engineering at <a href="http://www.uta.edu/"> the University of Texas at Arlington (UTA)</a>. My research focuses on the security of cyber-physical systems. Presently, I'm investigating security issues arising out of the growing use of the embedded devices in critical infrastructures that a potential attacker can exploit. I aim to develop mechanisms to address security, trust, and resilience of representative computer applications designed for the Internet of Things, distributed embedded systems, automotive systems, and related network-connected critical infrastructure.
+
+My research interests include automotive cybersecurity, IoT security, data provenance, machine learning, and cloud computing.
   
- <h2>Contact</h2> <p class="address"> Howard University,<br \>
- Department of Electrical Engineering and Computer Science, <br \>
- 2300 Sixth Street, NW <br/>
-    Room 2038C <br/>
-  Washington, DC 20059 <br \> 
-  Phone: +1 (202) 806-4822  <br \> 
+ <h2>Contact</h2> <p class="address"> Cyber-physical System Security Lab (CSSL)<br \>
+ Department Computer Science and Engineering, <br \>
+ University of Texas at Arlington (UTA), <br \>
+ 500 UTA Blvd., Room 102 ERB Bldg.<br/>
+  Arlington, TX 76019-0015 <br/>
+  Phone: +1 (817) 272-3785  <br \> 
 
 
-  <table><tbody><tr><td>Email: <span title="email">habeeb (dot) olufowobi (at) scs (dot) howard (dot) edu</span></td></tr>
+  <table><tbody><tr><td>Email: <span title="email">habeeb (dot) olufowobi (at) uta (dot) edu</span></td></tr>
     <!--tr><td>Address</td><td>900 University Ave <br> 309 Winston Chung Hall </br> 
     Riverside, CA 92521<br--> 
     </td></tr>
@@ -68,48 +139,6 @@ type="text/css" href="index.css"> </head>
 
      </ul>
 
-    
-     
- <h2> Publication </h2>
-
-    <ul>
-    <h3>Dissertation</h3>
-    <ul>
-        <li>Fail-Operational Intrusion Detection System (FO-IDS):A Mechanism for Securing Automotive In-Vehicle Networks, Howard University.<a href="thesis.pdf">[PDF]</a> </li>
-    </ul>
-
-
-   <h3> Conference and Workshop Papers</h3>
-   <ul>
-    <li><b>Olufowobi, Habeeb</b>, Sena Hounsinou and Bloom, Gedare. “Controller Area Network Intrusion Prevention System Leveraging Fault Recovery.” ACM Workshop on Cyber-Physical Systems Security &amp; Privacy (CPS-SPC'19).</li>
-
-    <li><b> Olufowobi, Habeeb</b>, Gedare Bloom, Clinton Young, and Joseph Zambreno. "Work-in-Progress: Real-Time Modeling for Intrusion Detection in Automotive Controller Area Network." In 2018 IEEE Real-Time Systems Symposium (RTSS), pp. 161-164. IEEE, 2018. <a href="rtss_wip.pdf">[PDF]</a> </li>
-
-    <li> Parwez, Md Salik, and <b>Olufowobi, Habeeb.</b> “Cost-constrained Handoff in Next Generation Heterogeneous Wireless Networks”. Ubiquitous Computing, Electronics and Mobile Communication Conference (UEMCON), 2018 IEEE 9th Annual. IEEE. [PDF] </li>
-
-    <li><b> Olufowobi, Habeeb </b>, Uchenna Ezeobi, Eric Muhati, Gaylon Robinson, Clinton Young, Joseph Zambreno, and Gedare Bloom. “Anomaly Detection Approach Using Adaptive Cumulative Sum Algorithm for Controller Area Network”. Proceedings of the ACM Workshop on Automotive Cybersecurity. ACM, 2019. To Appear <a href="autosec.pdf">[PDF]</a> </li>
-
-    <li> Young, Clinton, <b>Olufowobi, Habeeb </b>, Zambreno, Joseph, and Bloom, Gedare, “Automotive Intrusion Detection Based on Constant CAN Message Frequencies Across Vehicle Driving Modes”. Proceedings of the ACM Workshop on Automotive Cybersecurity. ACM, 2019. To appear  </li>
-    
-    <li>Young, Clinton, <b>Olufowobi, Habeeb </b>, Zambreno, Joseph, and Bloom, Gedare, “Survey of Automotive Controller Area Network Intrusion Detection Systems.” IEEE Design &amp; Test (2018) </li>
-
-    <li><b>Olufowobi, Habeeb</b>, Robert Engel, Nathalie Baracaldo, Luis Angel D. Bathen, Samir Tata, and Heiko Ludwig. "Data Provenance Model for Internet of Things (IoT) Systems." In International Conference on Service-Oriented Computing, pp. 85-91. Springer, Cham, 2016. <a href="DataProvModel.pdf">[PDF]</a> </li>
-    </ul>
-
-<h3> Book Chapter </h3>
-    <ul>
-    <li><b>Olufowobi, Habeeb </b>, and Gedare Bloom. "Connected Cars: Automotive Cybersecurity and Privacy for Smart Cities." In Smart Cities Cybersecurity and Privacy, pp. 227-240. Elsevier, 2019. </li>
-    </ul>
-
-
-<h3> Papers Submitted and Pending Review Decisions </h3>
-
-    <ul>
-    <li><b>Olufowobi, Habeeb</b>, Young, Clinton, Zambreno, Joseph, and Bloom, Gedare. "SAIDuCANT: Specification-based Automotive Intrusion Detection using Controller Area Network (CAN) Timing." IEEE Transactions on Vehicular Technology.</li>
-    </ul>
-
-</ul>
-
 
 
  <h2>Research Experience</h2>
@@ -118,29 +147,6 @@ type="text/css" href="index.css"> </head>
    <li>Research Internship at  <a href="https://www.research.ibm.com/labs/almaden/">IBM Research, Almaden, CA </a> </li>
     <li>Research Assistant, Embedded Systems Security Lab</a>, Howard Univeristy, <br>Mentor: <a href="https://gedare.github.io/">Gedare Bloom</a>.  </li> </ul>
    
- <h2>Teaching Experience</h2>
- <h3>Howard University (Lecturer, Electrical Engineering and Computer Science)</h3>
- <ul>
-    <li>Cloud Computing, Fall 2019</li>
-    <li>Computer Science III, Fall 2019</li>
-    <li>Math I Lab, Spring 2018 </li>
- </ul>
-    
- <h3> Howard University (Grad Student)</h3>
-   <ul>       
-       <li>Computer Organization I and II, Teaching Assistant, Fall 2016, Spring 2017, 2018</li>
-       <li>Operating Systems, Teaching Assistant, Fall 2016, 2017, 2018</li>
-       <li>Unix Lab, Teaching Assistant, Spring 2017</li>
-       <li>Modelling and Simulation, Teaching Assistant, Fall 2016</li>
-    </ul>
-
-
-<h3> California State Polytechnic University Pomona (Grad Student)</h3>
-    <ul>       
-        <li>Electromagnetic Fields, Teaching Assistant, Spring 2014 </li>
-        <li>Software Engineering, Teaching Assistant, Winter 2014</li>
-     </ul>
-
 
 <h2> AWARDS, HONORS AND PROFESSIONAL AFFILIATIONS </h2>
   <ul>
@@ -148,7 +154,7 @@ type="text/css" href="index.css"> </head>
     <li> Trans-Atlantic Symposium on Technology and Policy Travel Award, $1500, 2017 </li>
     <li> CPS Week Student Travel Award, $800, Carnegie Melon University 2017 </li>
     <li> IEEE Security Development Conference Travel Award, 2016 </li>
-    <li> Chancellor’s Prize - Best Graduating Student in the University, Fountain University, 2011 </li>
+    <li> Chancellor's Prize - Best Graduating Student in the University, Fountain University, 2011 </li>
     <li> College Prize - Best Graduating Student in Sciences, Fountain University, 2011 </li>
     <li> Fountain University Scholar Award, in recognition of excellence in academic performance, 2008 - 2011 </li>
     <li> Student Member, Institute of Electrical and Electronic Engineers (IEEE) </li>
