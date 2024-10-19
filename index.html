@@ -1,183 +1,146 @@
-
-<html> 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-97181172-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<head> <title> Habeeb Olufowobi Webpage </title> <link rel="stylesheet"
-type="text/css" href="index.css"> 
-<style>
-body {font-family: "Lato", sans-serif;}
-
-.sidebar {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 16px;
-}
-
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 250px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-  margin-right: 250px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-</style>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Pages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
+<body>
 
-<body bgcolor="#e8e8ed"><div id = "container"> <div style= "margin-left: 250px" id = "header"> <h1>Habeeb Dipo Olufowobi, Ph.D.</h1> </div>
+    <!-- Wrapper for header and content to ensure equal spacing -->
+    <div class="container">
 
-<hr \>
+        <!-- Header with Navigation -->
+        <header class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><strong>Habeeb D. Olufowobi</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pubs.html">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                        <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
-<div id="sidebar" class="sidebar">
-  <div id="profile" class="clearfix">
-      <div class="author__avatar">
-          <a href="images/IMG_0103.jpg">
-              <img src="pics.JPG" alt="Habeeb Olufowobi" style="width:100%">
-          </a>
-      </div>
- 
-      </div> 
-    <a href="index.html"><i class="fa fa-fw fa-home"></i><span class="fontawesome-text"> Home</span></a>
-    <a href="research.html"><i class="fa fa-fw fa-book"></i> Research</a>
-    <a href="publications.html"><i class="fa fa-fw fa-edit"></i> Publications</a>
-    <a href="teaching.html"><i class="fa fa-fw fa-book"></i> Teaching</a>
-    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-    <a href="Habeeb.pdf"><i class="fas fa-cloud-download-alt"></i> CV</span></a>
-    <a href="https://scholar.google.com/citations?user=8sqvlk8AAAAJ&hl=en&oi=ao"><i class="fa fa-fw fa-graduation-cap"></i> Google Scholar</a>
-    <a href="https://www.researchgate.net/profile/Habeeb_Olufowobi"><i class="fab fa-researchgate" style='font-size:28px'></i> Research Gate</a>
+        <!-- Main Layout with Sidebar and Main Content -->
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3 bg-light sidebar">
+                <div class="text-center">
+                    <img src="habeeb_headshot.jpg" alt="Profile Image" class="img-fluid rounded-circle my-4">
+                    <h2><b>Habeeb Olufowobi, PhD</b></h2>
+                    <p>Assistant Professor <br \>
+                    Lead, <a href="https://csslab.uta.edu/" target="_blank">Cyber-physical System Security Lab</a><br \>
+                    Department of Computer Science and Engineering</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Room 560, ERB, 500 UTA Blvd.</li>
+                        <li><i class="fas fa-university"></i> <a href="https://www.uta.edu/"> University of Texas at Arlington</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:habeeb.olufowobi@uta.edu"> habeeb.olufowobi[at]uta[dot]edu</a></li>
+                        <li><i class="fas fa-phone-alt"></i> +1 (817) 272-3785</li>
+                        <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=8sqvlk8AAAAJ&hl=en">Google Scholar</a></li>
+                        <li><i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0001-8959-2038">ORCID</a></li>
+                        <li><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Habeeb_Olufowobi">ResearchGate</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/habeeb-o-872b911b/">LinkedIn</a></li>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fas fa-id-card"></i> <a href="pdf/Habeeb Resume.pdf">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </aside>
 
-  
+            <!-- Main Content -->
+            <main class="col-md-9">
+                <div class="main-content-wrapper"> <!-- New wrapper div -->
+                <h1><strong>Education</strong></h1>
+                <div class="scroll-box">
+                    <ul>
+                        <li>Ph.D., Systems and Computer Science,  
+                            <a href="http://www.cs.ceacs.howard.edu/">Howard University, Washington DC,</a> 2019</li>
+                            <li> M.S, Electrical Engineering - Computer Systems, <a
+                            href="http://www.cpp.edu">California State Polytechnic University Pomona,</a> 2014</li> 
+                       
+                            <li> B.S, Computer Science, <a
+                            href="http://www.fountainuniversity.edu.ng">Fountain University Osogbo,</a> 2011</li> 
+                    </ul>
+                </div>
+
+                <h1><strong>Research</strong></h1>
+                <p align="justify">My research focuses on the security of cyber-physical systems and AI/ML models used in critical infrastructure, particularly healthcare applications. 
+                I investigate cybersecurity challenges in connected autonomous vehicles, distributed systems, and real-time embedded systems, with an emphasis on the hardware-software interface. 
+                Additionally, I explore interpretability, explainability, and biases in AI/ML models and privacy concerns in healthcare, intelligent transportation, and smart grid systems. 
+                My work has been supported by federal grants from the National Institutes of Health, the AIM-AHEAD initiative, and the University of Texas System. </p>
+                
+                <p>Please check my <a href="research.html">research page</a> and <a href="pubs.html">publications</a> for more details.</p>  
+
+                <h1><strong>Teaching</strong></h1>
+                <p>I develop and teach practical, hands-on courses in information security, cloud computing, embedded systems, and computer network organization. </p>
+                    
+                    <p>Please see my <a href="teaching.html">teaching page</a> for more details.</p>      
+                
+                <h1><strong>Recent news</strong></h1>
+                <div class="scroll-box">
+                    <ul>
+                        <li><b>October 2024:</b> I received the Google-CAHSI Cybersecurity Curriculum Fellowship to adapt and adopt cybersecurity curriculum at HSIs. <b>Total: 25k</b></li>
+                        <li><b>September 2024:</b> I have received an NIH AIM-AHEAD ABC-EE grant to work on explainable AI/ML models to predict heart disease outcomes in Chagas Disease. <b>Total: 250k</b></li>
+                        <li><b>September 2024:</b> Our paper “Simulating Load Sharing for Resource Constrained Devices” published in IEEE Access. </li> 
+                        <li><b>September 2024:</b> Welcome to our new PhD student, Aqsa Yousaf!</li>
+                        <li><b>August 2024:</b> Presented our work on "Improving Health Equity in Algorithmic Decision-Making Using Explainable AI" at <a href="https://www.aim-ahead.net/conferences/aihes-2024/">AIHES 2024.</a></li>  
+                        <li><b>July 2024:</b> Our paper "Evaluating Large Language Models for Enhanced Intrusion Detection in Internet of Things Networks" accepted in <a href="https://globecom2024.ieee-globecom.org/">IEEE GLOBECOM 2024.</a></li>
+                        <li><b>June 2024:</b> Our paper “D-NDNoT: Deterministic Named Data Networking for Time-Sensitive IoT Applications” published in <a href="https://ieeexplore.ieee.org/document/10491589?source=authoralert">IEEE IoT Journal. </a></li> 
+                        <li><b>April 2024:</b> My Ph.D. student, Paul Agbaje, is awarded the Kelcy Warren Graduate Fellowship for Engineering at UTA, <b>Congratulations Paul.</b> </li> 
+                        <li><b>March 2024:</b> Congratulations to my PhD students, <b>Afia Anjum and Paul Agbaje</b> for securing internship offers at Los Alamos National Laboratory!</li> 
+                        <li><b>March 2024:</b> Our paper “MCFICS: Model-based Coverage-guided Fuzzing for Industrial Control System Protocol Implementations” has been accepted at <a href="https://www.iecon-2024.org/">IEEE IECON24.</a></li> 
+                        <li><b>March 2024:</b> Our paper "From Weeping to Wailing: A Transitive Stealthy Bus-off Attack" has been accepted at <a href="https://ieeexplore.ieee.org/abstract/document/10480916">IEEE ITS.</a></li> 
+                        <li><b>Feburary 2024:</b> Hosted a workshop on “Adversarial attacks and the Robustness of Object Detection Algorithms for Autonomous Vehicles" at <a href="https://uta.engineering/ourcs/">OurCS@DFW.</a></li> 
+                        <li><b>Feburary 2024:</b> My Ph.D. student, Afia Anjum, won the best Ph.D. Lightning Talk award at the Student Computing Research Festival (SCRF), 2024, <b>Congratulations Afia.</b> </li> 
+                        <li><b>Feburary 2024:</b> Our paper “Towards named data networking technology: Emerging applications, use cases, and challenges for secure data communication” published in <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X23003631">Future Generation Computer Systems. </a></li> 
+                        <li><b>January 2024:</b> Our paper "AutoWatch: Learning Driver Behavior with Graphs for Auto Theft Detection and Situational Awareness" has been accepted at <a href="https://www.ndss-symposium.org/ndss2024/co-located-events/vehiclesec/accepted-demo-papers-and-posters/">VehicleSec '24.</a></li> 
+                        <li><b>January 2024:</b> Our paper "Deadline-Based Class Assignment for Time-Sensitive Network Frame Preemption" has been accepted at <a href="https://icit2024.ieee-ies.org/">ICIT24.</a></li> 
+                        <li><b>December 2023:</b> Our paper “IoT-MGSec: Mitigating Man-in-the-Middle Attacks in IoT Networks Using Graph-Based Learning” published in <a href="https://www.icmla-conference.org/icmla23/">ICMLA '23. </a></li> 
+                        <li><b>December 2023:</b> Our paper “Privacy-Preserving Intrusion Detection System for Internet of Vehicles using Split Learning” published in <a href="https://dl.acm.org/doi/proceedings/10.1145/3632366">BDCAT '23. </a></li> 
+
+                </div>
+
+                <h1><strong>Selected Publication</strong></h1>
+                <div class="scroll-box">
+                    <ul>
+                        <li>Nwafor, E., Baskota, U., Parwez, M.S., Blackstone, J. and <b>Olufowobi, H.</b>, Evaluating Large Language Models for Enhanced Intrusion Detection in Internet of Things Networks. 
+                            IEEE Global Communications Conference, <b>GLOBECOM '24.</b> [PDF]</li> 
+                        <li>Anjum, A., Agbaje, P., Hounsinou, S., Guizani, N. and  <b>Olufowobi, H.</b>. D-NDNoT: Deterministic Named Data Networking for Time-Sensitive IoT Applications. 
+                            <b>IEEE IoTJ (JIF 10.6).</b> [PDF]</li>
+                        <li>Agbaje, P., <b>Olufowobi, H.</b>, Hounsinou, S. and Bloom, G., 2024. From Weeping to Wailing: A Transitive Stealthy Bus-Off Attack.
+                            <b>IEEE TITS (JIF 7.9).</b> [PDF]</li>
+                        <li>Agbaje, P., Anjum, A., Talukder, Z., Islam, M., Nwafor, E. and <b>Olufowobi, H.</b>. FedCime: An Efficient Federated Learning Approach For Clients in Mobile Edge Computing. 
+                            2023 IEEE International Conference on Edge Computing and Communications, <b>IEEE EDGE '23.</b> [PDF]</li>
+                        <li>Agbaje, P., Anjum, A., Mitra, A., Bloom, G. and Olufowobi, H., 2022, April. A framework for consistent and repeatable controller area network IDS evaluation. 
+                            International Workshop on Automotive and Autonomous Vehicle Security, <b>AutoSec '22 (Best Paper).</b> [PDF]</li>        
+                        <li>Hounsinou, S., Stidd, M., Ezeobi, U., <b>Olufowobi, H.</b>, Nasri, M. and Bloom. Vulnerability of controller area network to schedule-based attacks. 
+                            42nd IEEE Real-Time Systems Symposium, <b>RTSS '21.</b> [PDF]</li>
+                        <li><b>Olufowobi, H.</b>, Young, C., Zambreno, J. and Bloom, G. SAIDuCANT: Specification-based automotive intrusion detection using controller area network (CAN) timing. 
+                            IEEE Transactions on Vehicular Technology, <b>IEEE TVT (JIF 6.1).</b> [PDF]</li>
+                <!-- Add more content as needed -->
+                </div>
+                </div>
+            </main>
+        </div>
+
     </div>
 
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Habeeb Olufowobi</p>
+    </footer>
 
-        
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    </div>
-
-<div class="main">
-
-<h2><i class="fas fa-male"></i>  About me</h2>
-
- <p class="address" align='justify'>I am an Assistant Professor in the Department of Computer Science and Engineering at <a href="http://www.uta.edu/"> the University of Texas at Arlington (UTA)</a>. My research focuses on the security of cyber-physical systems. Presently, I'm investigating security issues arising out of the growing use of the embedded devices in critical infrastructures that a potential attacker can exploit. I aim to develop mechanisms to address security, trust, and resilience of representative computer applications designed for the Internet of Things, distributed embedded systems, automotive systems, and related network-connected critical infrastructure. Current research direction is in security and privacy challenges in 
- 	<ul>
- 	<li> Emerging network technologies for connected autonomous vehicles, </li>
- 	<li> The Internet of Vehicles (IoV) in a smart city ecosystem, and </li>
- 	<li> Vehicular cloud network security. </li>
- </ul>
-
-My research interests include automotive cybersecurity, IoT security, data provenance, machine learning, and cloud computing.
-  
- <h2>Contact</h2> 
- Department Computer Science and Engineering, <br \>
- University of Texas at Arlington (UTA), <br \>
- 500 UTA Blvd., ERB Bldg Rm 560<br/>
-  Arlington, TX 76019-0015 <br/>
-  Phone: +1 (817) 272-3785  <br \> 
-
-
-  <table><tbody><tr><td>Email: <span title="email">habeeb (dot) olufowobi (at) uta (dot) edu</span></td></tr>
-    <!--tr><td>Address</td><td>900 University Ave <br> 309 Winston Chung Hall </br> 
-    Riverside, CA 92521<br--> 
-    </td></tr>
-    <tr><td><a href="Habeeb.pdf">[Curriculum Vitae]</a>
-    &emsp; <a href="https://www.researchgate.net/profile/Habeeb_Olufowobi">[Research Gate]</a>
-    &emsp; <a href="https://github.com/Dipupo">[Github]</a>
-    &emsp; <a href="https://www.linkedin.com/in/habeeb-olufowobi-ph-d-872b911b">[LinkedIn]</a></td>
-    </td>
-    </tr>
-    </tbody></table>
-
-  <div style="float:left">
-
-
- <!--img height="28" src="images/email.png"></div> <br \-->
- </p>
-  
- <h2>Education</h2> <ul> <li> Ph.D., Systems and Computer Science, 2019, 
-     <a href="http://www.cs.ceacs.howard.edu/">Howard University, Washington DC</a></li>
-     <li> M.S, Electrical Engineering - Computer Systems Option, 2014, <a
-     href="http://www.cpp.edu">California State Polytechnic University Pomona, CA</a></li> 
-
-     <li> B.S, Computer Science, 2011, <a
-     href="http://www.fountainuniversity.edu.ng">Fountain University, Osogbo</a></li> </ul>
-
-
-     </ul>
-
-
-
- <h2>Research Experience</h2>
-   <ul> 
-   <li>Research Assistant, Embedded Systems Security Lab</a>, Howard Univeristy, <br>Mentor: <a href="https://gedare.github.io/">Gedare Bloom</a>.  </li> 
-   <li>Research Internship at  <a href="https://www.ornl.gov"> Oak Ridge National Laboratory, Oak Ridge, TN </a> </li>
-   <li>Research Internship at  <a href="https://www.research.ibm.com/labs/almaden/">IBM Research, Almaden, CA </a> </li>
-	</ul>
-   
-
-<h2> Awards and Honors </h2>
-  <ul>
-    <li> HBCU Blockchain Course Development Proposal Award, 2019 </li>
-    <li> Real-Time System Symposium Travel Award, 2018 </li>
-    <li> Trans-Atlantic Symposium on Technology and Policy Travel Award, 2017 </li>
-    <li> CPS Week Student Travel Award, Carnegie Melon University 2017 </li>
-    <li> IEEE Security Development Conference Travel Award, 2016 </li>
-    <li> Chancellor's Prize - Best Graduating Student in the University, Fountain University, 2011 </li>
-    <li> College Prize - Best Graduating Student in Sciences, Fountain University, 2011 </li>
-    <li> Fountain University Scholar Award, in recognition of excellence in academic performance, 2008 - 2011 </li>
-  </ul>
-
-
-<h2> Professional Associations </h2>
-<ul>
-    <li> Member IEEE </li>
-    <li> Member ACM </li>
-    <li> Member NSBE </li>
-</ul>
-
-<h2> Professional Development </h2>
-<ul>
-    <li> Participant, SAE CyberAuto Challenge, Detroit MI, July 2018 </li>
-    <li> Participant, CyberTruck Challenge, Warren, MI, June 2018 </li>
-</ul>
-       
-  </ul> </div> </div></body> </html>
+</body>
+</html>
