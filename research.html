@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habeeb Olufowobi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
@@ -38,19 +41,19 @@
                 <div class="text-center">
                     <img src="habeeb_headshot.jpg" alt="Profile Image" class="img-fluid rounded-circle my-4">
                     <h2><b>Habeeb Olufowobi, PhD</b></h2>
-                    <p>Assistant Professor <br \>
-                    Lead, <a href="https://csslab.uta.edu/" target="_blank">Cyber-physical System Security Lab</a><br \>
-                    Department of Computer Science and Engineering</p>
+                    <p>Assistant Professor <br>
+                    Director, <a href="https://csslab.uta.edu/" target="_blank">Cyber-physical Systems Security Lab</a><br>
+                    <a href="https://cse.uta.edu/" target="_blank" rel="noopener">Department of Computer Science and Engineering</a></p>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-map-marker-alt"></i> Room 560, ERB, 500 UTA Blvd.</li>
                         <li><i class="fas fa-university"></i> <a href="https://www.uta.edu/"> University of Texas at Arlington</a></li>
                         <li><i class="fas fa-envelope"></i> <a href="mailto:habeeb.olufowobi@uta.edu"> habeeb.olufowobi[at]uta[dot]edu</a></li>
                         <li><i class="fas fa-phone-alt"></i> +1 (817) 272-3785</li>
-                        <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=8sqvlk8AAAAJ&hl=en">Google Scholar</a></li>
+                        <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=lQAgbG0AAAAJ&hl=en&oi=ao">Google Scholar</a></li>
                         <li><i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0001-8959-2038">ORCID</a></li>
                         <li><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Habeeb_Olufowobi">ResearchGate</a></li>
                         <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/habeeb-o-872b911b/">LinkedIn</a></li>
-                        <li><i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/dipupo" target="_blank" rel="noopener">GitHub</a></li>
                         <li><i class="fas fa-id-card"></i> <a href="pdf/Habeeb Resume.pdf">Curriculum Vitae</a></li>
                     </ul>
                 </div>
@@ -58,60 +61,166 @@
 
             <!-- Main Content -->
             <main class="col-md-9">
-                <div class="main-content-wrapper"> <!-- New wrapper div -->
-                <h1><strong>Research Highlights</strong></h1>
-                <p align="justify">My research focuses on developing methods to ensure the security and trustworthiness of embedded and distributed systems, 
-                    including autonomous vehicles, the Internet of Things (IoT), the Internet of Vehicles (IoV), and emerging smart networks. 
-                    These systems present unique challenges due to their decentralized nature, real-time requirements, and vulnerability to security threats. 
-                    My work integrates principles from computer networks, cybersecurity, real-time systems, and machine learning to address these challenges.</p>
+                <div class="main-content-wrapper research-page">
+                    <section class="research-hero" aria-labelledby="research-title">
+                        <h1 id="research-title"><strong>Research</strong></h1>
+                        <p class="research-vision">My research focuses on advancing the security, resilience, and trustworthiness of intelligent cyber-physical systems (CPS) operating in adversarial and safety-critical environments. I develop secure and explainable AI-driven architectures for autonomous vehicles, edge intelligence, connected infrastructure, healthcare AI, and distributed cyber-physical systems. My work integrates cybersecurity, real-time systems, machine learning, and embedded systems to build intelligent systems that remain reliable under attack, uncertainty, and resource constraints.</p>
+                        <div class="research-tags" aria-label="Research areas">
+                            <span>Cyber-Physical Systems Security</span><span>Autonomous Vehicle Security</span><span>Trustworthy AI</span><span>Edge Intelligence</span><span>Explainable AI</span><span>IoT Security</span><span>Healthcare AI</span><span>Real-Time Systems</span>
+                        </div>
+                    </section>
 
-                <p align="justify">Through an interdisciplinary approach, I combine expertise in security, AI/ML, and real-time systems to develop scalable, transparent, 
-                    and reliable solutions for interconnected systems and critical healthcare applications. 
-                    My goal is to create interpretable AI models for healthcare, promoting fairness and equity while addressing the demands of interconnected systems.</p>
+                    <section class="research-section" aria-labelledby="research-thrusts-title">
+                        <h2 id="research-thrusts-title">Research Thrusts</h2>
+                        <div class="research-thrust-grid">
+                            <article class="research-thrust-card"><h3>Secure and Resilient Autonomous Systems</h3><p>I study how attacks against perception, communication, and control layers can compromise autonomous and connected vehicles, and I develop defenses that preserve safety and operational integrity under adversarial conditions.</p><ul><li>Connected and autonomous vehicle security</li><li>Sensor and perception attacks</li><li>In-vehicle network defense</li><li>Runtime resilience and adversarial autonomy</li></ul></article>
+                            <article class="research-thrust-card"><h3>Trustworthy AI for Safety-Critical CPS</h3><p>I develop methods for making AI-enabled cyber-physical systems more robust, explainable, and auditable when deployed in environments where failures can affect safety, security, or public trust.</p><ul><li>Adversarially robust AI/ML</li><li>Runtime monitoring and AI assurance</li><li>Explainable AI for safety-critical decisions</li><li>Security-aware learning systems</li></ul></article>
+                            <article class="research-thrust-card"><h3>Secure Edge Intelligence and Distributed CPS</h3><p>I investigate secure and efficient intelligence at the edge, including resource-constrained AI, federated learning, IoT/IIoT security, and distributed cyber-physical infrastructures.</p><ul><li>Edge AI and resource-constrained reasoning</li><li>IoT and industrial IoT security</li><li>Federated and privacy-preserving learning</li><li>Distributed intelligent infrastructure</li></ul></article>
+                            <article class="research-thrust-card"><h3>Explainable and Equitable AI for Healthcare</h3><p>I apply trustworthy AI principles to biomedical and healthcare problems, with emphasis on explainability, fairness, robustness, and health-equity-aware machine learning.</p><ul><li>Chagas disease diagnosis and prediction</li><li>Medical imaging AI and model explainability</li><li>Fairness and bias mitigation in clinical AI</li><li>Responsible deployment of healthcare AI/ML</li></ul></article>
+                        </div>
+                    </section>
+
+                    
+                    <section class="research-section" aria-labelledby="projects-title">
+                        <h2 id="projects-title">Selected Ongoing Projects</h2>
+
+                        <div class="project-card-grid project-card-grid-wide">
+                            <article class="project-card project-card-with-pubs">
+                                <span class="project-badge">Vehicle Security</span>
+                                <h3>Securing Connected Autonomous Vehicle Stack Against Adversarial Input</h3>
+                                <p>
+                                    This project investigates cross-layer security risks that emerge when adversarial inputs propagate from autonomy functions, such as perception and decision-making, into low-level vehicle control and communication systems.
+                                </p>
+                                <div class="project-publications">
+                                    <h4>Related Publications</h4>
+                                    <ul>
+                                        <li><span class="venue-badge">VehicleSec 2025</span> “Beyond the Glow: Understanding Luminescent Marker Behavior Against Autonomous Vehicle Perception Systems.”</li>
+                                        <li><span class="venue-badge">IEEE T-ITS 2024</span> “From Weeping to Wailing: A Transitive Stealthy Bus-Off Attack.”</li>
+                                        <li><span class="venue-badge">VehicleSec 2024</span> “AutoWatch: Learning Driver Behavior with Graphs for Auto Theft Detection and Situational Awareness.”</li>
+                                        <li><span class="venue-badge">IEEE TVT 2019</span> “SAIDuCANT: Specification-based Automotive Intrusion Detection using CAN Timing.”</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card project-card-with-pubs">
+                                <span class="project-badge">XAI in Healthcare</span>
+                                <h3>Explainable AI for Chagas Disease Diagnosis and Prediction</h3>
+                                <p>
+                                    This project develops ethical, explainable, and trustworthy AI/ML models for diagnosis and prediction of heart disease outcomes in Chagas disease, with attention to transparency, robustness, and health equity.
+                                </p>
+                                <div class="project-publications">
+                                    <h4>Related Publications</h4>
+                                    <ul>
+                                        <li><span class="venue-badge">WACV 2026</span> “MorphXAI: An Explainable Framework for Morphological Analysis of Parasites in Blood Smear Images.”</li>
+                                        <li><span class="venue-badge">BHI 2025</span> “Beyond Detection: Comparative Explainability Study on <em>Trypanosoma cruzi</em> Using CAMs and DETR Attention.”</li>
+                                        <li><span class="venue-badge">AIM-AHEAD 2025</span> “Beyond Detection: A Trustworthy and Explainable AI Framework for Chagas Disease Using YOLOv8 and DINO-DETR.”</li>
+                                        <li><span class="venue-badge">AIM-AHEAD 2024</span> “Improving Health Equity in Algorithmic Decision-Making Using Explainable AI Techniques.”</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card project-card-with-pubs">
+                                <span class="project-badge">Trustworthy Edge AI</span>
+                                <h3>Secure Edge Intelligence for CPS Platforms</h3>
+                                <p>
+                                    This research explores secure and analyzable AI reasoning at the edge for resource-constrained CPS platforms, including IoT, autonomous systems, and distributed sensing infrastructures.
+                                </p>
+                                <div class="project-publications">
+                                    <h4>Related Publications</h4>
+                                    <ul>
+                                        <li><span class="venue-badge">IEEE IoTJ 2024</span> “D-NDNoT: Deterministic Named Data Networking for Time-Sensitive IoT Applications.”</li>
+                                        <li><span class="venue-badge">IEEE Access 2024</span> “Simulating Load Sharing for Resource Constrained Devices.”</li>
+                                        <li><span class="venue-badge">IEEE EDGE 2023</span> “FedCime: An Efficient Federated Learning Approach for Clients in Mobile Edge Computing.”</li>
+                                        <li><span class="venue-badge">IEEE WF-IoT 2021</span> “Dynamic Load Sharing in Memory Constrained Devices: A Survey.”</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card project-card-with-pubs">
+                                <span class="project-badge">AI + Transportation</span>
+                                <h3>Privacy-Preserving and Resilient Intelligent Transportation Systems</h3>
+                                <p>
+                                    This work studies secure data sharing, privacy-preserving learning, and resilient communication architectures for intelligent transportation systems and Internet of Vehicles environments.
+                                </p>
+                                <div class="project-publications">
+                                    <h4>Related Publications</h4>
+                                    <ul>
+                                        <li><span class="venue-badge">OJ-COMS 2026</span> “Digital Twin–Guided AI Path Planning for Connectivity-Aware Mobility.”</li>
+                                        <li><span class="venue-badge">ICC 2026</span> “CTMap: LLM-Enabled Connectivity-Aware Path Planning in Millimeter-Wave Digital Twin Networks.”</li>
+                                        <li><span class="venue-badge">ESANN 2026</span> “Privacy-preserving Intrusion Detection System for Internet of Vehicles Using Split Learning.”</li>
+                                        <li><span class="venue-badge">BDCAT 2023</span> “Privacy-Preserving Intrusion Detection System for Internet of Vehicles Using Split Learning.”</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card project-card-with-pubs">
+                                <span class="project-badge">AI Security</span>
+                                <h3>Robust Vision-Language Models for Autonomous Systems</h3>
+                                <p>
+                                    This project investigates vulnerabilities and defenses for multimodal AI systems used in autonomous navigation, including perception attacks, federated personalization, and robust inference.
+                                </p>
+                                <div class="project-publications">
+                                    <h4>Related Publications</h4>
+                                    <ul>
+                                        <li><span class="venue-badge">ICML 2026</span> “Revisiting Asymmetries in Black-box Link Stealing against Graph Neural Networks.”</li>
+                                        <li><span class="venue-badge">PETS 2026</span> “Unveiling Graph Copycats: Inference Attacks with Student Models.”</li>
+                                        <li><span class="venue-badge">IV 2026</span> “Toward Inherently Robust VLMs Against Visual Perception Attacks.”</li>
+                                        <li><span class="venue-badge">ECAI 2025</span> “FedVLM: Scalable Personalized Vision-Language Models through Federated Learning.”</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card project-card-with-pubs">
+                                <span class="project-badge">Cyber-Physical Defense</span>
+                                <h3>Runtime Security for Embedded and Real-Time Systems</h3>
+                                <p>
+                                    This research develops intrusion detection, prevention, and recovery mechanisms for embedded and real-time platforms, including automotive networks and industrial control systems.
+                                </p>
+                                <div class="project-publications">
+                                    <h4>Related Publications</h4>
+                                    <ul>
+                                        <li><span class="venue-badge">DSN 2025</span> “MichiCAN: Spoofing and Denial-of-Service Protection Using Integrated CAN Controllers.”</li>
+                                        <li><span class="venue-badge">IECON 2024</span> “MCFICS: Model-based Coverage-guided Fuzzing for Industrial Control System Protocol Implementations.”</li>
+                                        <li><span class="venue-badge">IEEE TVT 2023</span> “CANASTA: Controller Area Network Authentication Schedulability Timing Analysis.”</li>
+                                        <li><span class="venue-badge">RTSS 2021</span> “Vulnerability of Controller Area Network to Schedule-Based Attacks.”</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+<section class="research-section" aria-labelledby="impact-title">
+                        <h2 id="impact-title">Funding and Research Impact</h2>
+                        <div class="impact-grid">
+                            <article class="impact-card"><span class="impact-number">$598,895</span><h3>NSF CAREER Award</h3><p>Supporting research on securing connected autonomous vehicle stacks against adversarial input.</p></article>
+                            <article class="impact-card"><span class="impact-number">$250,000</span><h3>NIH AIM-AHEAD Award</h3><p>Supporting explainable AI/ML models for Chagas disease diagnosis and prediction.</p></article>
+                            <article class="impact-card"><span class="impact-number">$50,000</span><h3>NIH AIM-AHEAD Fellowship</h3><p>Supporting health-equity-focused research on explainable AI for algorithmic decision-making.</p></article>
+                            <article class="impact-card"><span class="impact-number">$25,000</span><h3>Google-CAHSI Fellowship</h3><p>Supporting cybersecurity curriculum development and training at Hispanic-Serving Institutions.</p></article>
+                        </div>
+                    </section>
+
+                    <section class="research-section" aria-labelledby="infrastructure-title">
+                        <h2 id="infrastructure-title">Research Infrastructure</h2>
+                        <p>The Cyber-physical Systems Security Lab supports research in AI security, autonomous systems, embedded systems, healthcare AI, and large-scale machine learning experimentation. The lab includes multi-GPU compute resources and dedicated infrastructure for cyber-physical systems security, trustworthy AI, and edge intelligence research.</p>
+                    </section>
                 </div>
-                
-                <div class="main-content-wrapper">
-                <ul>
-                    <h2><li><b>Security and Trustworthiness in Embedded and Distributed Systems</b></li></h2>
-                    <p align="justify">This research focuses on ensuring the security and reliability of embedded and distributed systems, such as autonomous vehicles, IoT, and IoV. 
-                    These systems are inherently decentralized and exposed to security threats, requiring innovative approaches to safeguard real-time performance and prevent vulnerabilities in both hardware and software components. 
-                    By integrating network security, real-time systems, and cybersecurity practices, this research aims to create secure and resilient infrastructure for these emerging technologies.</p>
 
-                    <h2><li><b>Cybersecurity Challenges in Autonomous Vehicles</b></li></h2>
-                    <p align="justify">With the rise of autonomous and connected vehicles, ensuring the safety and security of in-vehicle networks and communication systems is critical. 
-                    This research investigates how security solutions can be applied to protect autonomous vehicles from attacks, focusing on both hardware-software interfaces and 
-                    fail-operational systems that can maintain safe functionality even in the event of security breaches.</p>
-
-                    <h2><li><b>Real-Time Systems and Critical Infrastructure</b></li></h2>
-                    <p align="justify">Real-time systems, such as those used in healthcare, smart grids, and transportation, must meet strict timing constraints to operate safely and effectively. 
-                    This research area explores methods to secure real-time embedded systems against cyber threats, ensuring that critical tasks are executed within required time frames while maintaining system integrity, 
-                    even in the face of adversarial manipulations.</p>
-
-                    <h2><li><b>AI/ML for Healthcare Applications</b></li></h2>
-                    <p align="justify">AI and ML models are increasingly being used in healthcare for diagnosis, treatment recommendations, and decision support. 
-                    This research focuses on making these AI-driven systems transparent and interpretable to ensure that healthcare professionals can trust their outcomes. 
-                    By addressing explainability and biases in AI models, this work aims to promote fairness and equity in healthcare delivery.</p>
-
-                    <h2><li><b>Interconnected Systems in Smart Networks</b></li></h2>
-                    <p align="justify">As smart networks continue to expand, including those for homes, cities, and industrial settings, maintaining security and reliability is paramount. 
-                    This research addresses the complex challenges posed by interconnected systems, which must securely share and process data across decentralized networks. 
-                    By focusing on scalability, security, and real-time performance, this work supports the development of smart infrastructure that is both resilient and efficient.</p>
-            </div>
-
-            <h2>Research Sponsors</h2>
-                <table border="1"><tr><tdAlt><a href="https://www.nsf.gov/" target="_blank"><img src="nsf_logo.jpeg" height="100"> </a></tdAlt>
-                        <tdAlt><a href="https://www.aim-ahead.net/programs/aim-ahead-consortium-development-projects-cdp-year-2/" target="_blank"><img src="aim-ahead.png" height="100"> </a></tdAlt>
-                        </tdAlt><tdAlt><a href="https://cahsi.utep.edu/" target="_blank"><img src="cahsi.png" height="100"> </a></tdAlt>
-                    </tr>
-                </table> 
-            </main>
+                <section class="sponsors-card" aria-labelledby="sponsors-title">
+                    <h2 id="sponsors-title">Research Sponsors</h2>
+                    <div class="sponsor-logos">
+                        <a href="https://www.nsf.gov/" target="_blank" rel="noopener"><img src="nsf_logo.jpeg" alt="National Science Foundation logo"></a>
+                        <a href="https://www.aim-ahead.net/programs/aim-ahead-consortium-development-projects-cdp-year-2/" target="_blank" rel="noopener"><img src="aim-ahead.png" alt="NIH AIM-AHEAD logo"></a>
+                        <a href="https://cahsi.utep.edu/" target="_blank" rel="noopener"><img src="cahsi.png" alt="CAHSI logo"></a>
+                    </div>
+                </section>
+</main>
         </div>
 
     </div>
 
     <!-- Footer -->
     <footer class="bg-light text-center py-3">
-        <p>&copy; 2025 Habeeb Olufowobi</p>
+        <p>&copy; 2026 Habeeb Olufowobi</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js"></script>
